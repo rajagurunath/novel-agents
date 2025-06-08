@@ -198,5 +198,5 @@ This will open the web interface in your default browser.
 This project is a demonstration of the powerful and flexible infrastructure provided by Novel. To learn more, explore their offerings and follow their updates.
 
 ###  Twitter / X: @novelecosystem
-### Website: novelecosystem.com (Note: Add the correct website link when available)
+### io.net : https://io.net
 
