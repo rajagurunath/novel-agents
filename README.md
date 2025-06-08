@@ -80,13 +80,18 @@ graph TD
         C{Tool Executor}
     end
 
-    subgraph "AI Brain"
-        D[Novel LLM Backend]
+    subgraph "LLM Backend"
+        D[IO intelligence]
+    end
+
+    subgraph "Web3 Transactions"
+        Z[Novel Backend]
     end
 
     subgraph "Tools (Python Functions)"
         E[execute_sql_query]
         F[add_person, etc.]
+        X[Transfer USDT]
     end
 
     subgraph "Data Layer"
@@ -94,17 +99,18 @@ graph TD
     end
 
     A -- "User Prompt" --> B
-    B -- "1. What should I do? (Think)" --> D
-    D -- "2. Plan: 'Use tool X with params Y'" --> B
-    B -- "3. Execute Plan" --> C
-    C -- "4. Calls specific function" --> E
-    E -- "5. Runs SQL query" --> G
-    G -- "6. Returns data" --> E
-    E -- "7. Formats result" --> C
-    C -- "8. Returns tool output to Agent" --> B
-    B -- "9. Data + Prompt --> Final Answer" --> D
-    D -- "10. Generates natural language response" --> B
-    B -- "11. Final Response" --> A
+    B -- "1.What should I do? (Think)" --> D
+    D -- "2.Plan: 'Use tool X with params Y'" --> B
+    B -- "3.Execute Plan" --> C
+    C -- "4.Calls specific function" --> E
+    E -- "5.Runs SQL query" --> G
+    G -- "6.Returns data" --> E
+    E -- "7.Formats result" --> C
+    C -- "8.Returns tool output to Agent" --> B
+    B -- "9.Data + Prompt --> Final Answer" --> D
+    D -- "10.Generates natural language response" --> B
+    B -- "11.Final Response" --> A
+    X -- "Calls Novel backend" --> Z
 ```
 
 
