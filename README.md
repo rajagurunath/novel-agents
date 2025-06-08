@@ -113,6 +113,7 @@ graph TD
     X -- "Calls Novel backend" --> Z
 ```
 
+![demo-video](novel-agent1.wbem)
 
 ## Calling the Novel Backend
 The connection to the Novel Ecosystem's powerful AI backend is configured in one simple block in both scripts. The OpenAIProvider is used to create a client that points to Novel's API endpoint, which is compatible with the OpenAI specification. This is where the "magic" happens—every time the agent thinks or formulates a response, it makes a call to this endpoint.
